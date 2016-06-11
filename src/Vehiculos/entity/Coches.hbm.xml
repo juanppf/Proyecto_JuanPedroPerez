@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-jun-2016 22:32:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Vehiculos.entity.Coches" table="coches" catalog="vehiculos" optimistic-lock="version">
+        <id name="idVehiculo" type="java.lang.Integer">
+            <column name="idVehiculo" />
+            <generator class="identity" />
+        </id>
+        <property name="matricula" type="string">
+            <column name="matricula" length="20" />
+        </property>
+        <property name="modelo" type="string">
+            <column name="modelo" length="20" />
+        </property>
+        <property name="reparacion" type="string">
+            <column name="reparacion" length="200" />
+        </property>
+        <property name="fechaRep" type="string">
+            <column name="fechaRep" length="20" />
+        </property>
+        <property name="kilometros" type="string">
+            <column name="kilometros" length="11" />
+        </property>
+        <property name="operario" type="string">
+            <column name="operario" length="75" />
+        </property>
+    </class>
+</hibernate-mapping>
